@@ -10,6 +10,7 @@ const body = document.querySelector("body");
 const heading = document.querySelector("#main-heading");
 const description = document.querySelector("#description");
 const toggleBtn = document.querySelector("#toggle");
+const image = document.querySelector("#image");
 
 // JS can now change attributes & properties
 heading.textContent = "Light & Dark Mode Website"; // JS wroteHTML code!
@@ -34,6 +35,7 @@ function toggleMode() {
         toggleBtn.style.background = "darkgrey";
         description.textContent = "Welcome to the Dark Side";
         toggleBtn.textContent = "Switch to Light";
+        image.src = "nighttime.avif";
     }
     else {
         console.log("apply light mode");
@@ -44,6 +46,7 @@ function toggleMode() {
         toggleBtn.style.background = "lightgrey";
         description.textContent = "Welcome to the Light Side";
         toggleBtn.textContent = "Switch to Dark";
+        image.src = "daytime.webp";
     }
 }
 
