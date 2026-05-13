@@ -52,3 +52,37 @@ function toggleMode() {
 
 // Attach function to the button
 toggleBtn.addEventListener("click", toggleMode);
+
+
+
+
+
+// REVIEW
+// 1. Select an HTML element for JS to target
+const hackerBtn = document.querySelector("#hacker");
+// 2. Attach click event listener to trigger a function
+hackerBtn.addEventListener("click", setHackerMode);
+// 3. Define what happens when event triggers function
+function setHackerMode() {
+    body.style.background = "black";
+    body.style.fontFamily = "monospace";
+    description.style.color = "rgb(103, 252, 44)";
+    description.textContent = "YOU HAVE BEEN HACKED :(";
+    heading.style.background = "black";
+    image.src = "https://i.guim.co.uk/img/media/97795d804327bfe41d52e3fb029fc8d370693f0b/0_258_4962_2978/master/4962.jpg?width=1200&quality=85&auto=format&fit=max&s=2eb7d50c3c5009fd3b0d7777a5305bda";
+}
+
+const duckBtn = document.querySelector("#duck");
+
+duckBtn.addEventListener("click", setDuckMode);
+
+function setDuckMode() {
+    body.style.background = "rgba(233, 255, 197, 0.89)";
+    body.style.fontFamily = "cursive";
+    description.style.color = "hsl(46, 99%, 49%)";
+    description.textContent = "🦆 Quack Quack Quack Quack Quack Quack Quack Quack Quack! 🦆";
+    heading.style.background = "white";
+    heading.style.color = "rgb(255, 215, 146)"
+    image.src = "https://lirp.cdn-website.com/2740280e/dms3rep/multi/opt/Auggie-2a12d0bb-640w.jpg";
+    image.style.border = "10px solid white";
+}
